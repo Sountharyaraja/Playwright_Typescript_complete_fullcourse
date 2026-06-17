@@ -1,0 +1,80 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Chapter05\05_PageObjectModelTest.spec.ts >> User can purchase a product successfully
+- Location: tests\Chapter05\05_PageObjectModelTest.spec.ts:10:5
+
+# Error details
+
+```
+Error: locator.fill: value: expected string, got undefined
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]: Swag Labs
+  - generic [ref=e5]:
+    - generic [ref=e9]:
+      - textbox "Username" [ref=e11]
+      - textbox "Password" [ref=e13]
+      - button "Login" [ref=e15] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Accepted usernames are:" [level=4] [ref=e19]
+        - text: standard_user
+        - text: locked_out_user
+        - text: problem_user
+        - text: performance_glitch_user
+        - text: error_user
+        - text: visual_user
+      - generic [ref=e20]:
+        - heading "Password for all users:" [level=4] [ref=e21]
+        - text: secret_sauce
+```
+
+# Test source
+
+```ts
+  1  | import { expect, Locator, Page } from '@playwright/test';
+  2  | 
+  3  | export class LoginPage {
+  4  |     readonly page:Page;
+  5  |     readonly usernameTextbox: Locator;
+  6  |     readonly passwordTextbox: Locator;
+  7  |     readonly loginButton: Locator;
+  8  | 
+  9  |     constructor(page: Page) {
+  10 |         this.page = page;
+  11 |         
+  12 |         //Elements
+  13 |         this.usernameTextbox=page.locator("#user-name");
+  14 |         this.passwordTextbox=page.locator("#password");
+  15 |         this.loginButton=page.locator("#login-button");
+  16 | 
+  17 |     }
+  18 | 
+  19 |     //Methods
+  20 |     async goToURL(){
+  21 |         await this.page.goto(`${process.env.SAUCELABSURL}`);
+  22 |     }
+  23 | 
+  24 |     async loginIntoApplication(userName:string,password:string){
+  25 |         await expect(this.usernameTextbox).toBeVisible();
+> 26 |         await this.usernameTextbox.fill(userName);
+     |                                    ^ Error: locator.fill: value: expected string, got undefined
+  27 |         await this.passwordTextbox.fill(password);
+  28 |         await this.loginButton.click();
+  29 | 
+  30 |     }
+  31 | 
+  32 | }
+  33 | 
+  34 | 
+```

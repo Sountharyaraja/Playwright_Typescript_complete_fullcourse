@@ -1,0 +1,147 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\playwright.config.ts",
+    "rootDir": "C:/Users/sount/OneDrive/Desktop/Learning/Playwright_Typescript_complete_fullcourse/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 36000000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/sount/OneDrive/Desktop/Learning/Playwright_Typescript_complete_fullcourse/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sount/OneDrive/Desktop/Learning/Playwright_Typescript_complete_fullcourse/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "json-test-report.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "junit-test-report.xml"
+        }
+      ],
+      [
+        "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "all",
+    "updateSourceMethod": "3way",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Chapter05\\05_PageObjectModelTest.spec.ts",
+      "file": "Chapter05/05_PageObjectModelTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "User can purchase a product successfully",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-17T01:14:07.490Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f45b8738e2e7cd282b4b-2f89f4d7fd6c889f870d",
+          "file": "Chapter05/05_PageObjectModelTest.spec.ts",
+          "line": 19,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-17T01:14:06.424Z",
+    "duration": 7991.5929999999935,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
