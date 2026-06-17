@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import {test} from '../../src/fixtures/TestFixture'
+//import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../src/pages/LoginPage';
 import { HomePage } from '../../src/pages/HomePage';
 import { ProductSummaryPage } from '../../src/pages/ProductSummaryPage';
@@ -7,6 +8,7 @@ import { CheckoutYourInformationPage } from '../../src/pages/CheckoutYourInforma
 import { CheckoutOverviewPage } from '../../src/pages/CheckoutOverviewPage';
 import { CheckoutCompletePage } from '../../src/pages/CheckoutCompletePage';
 import dotenv from 'dotenv';
+
 dotenv.config();
 
 const username = process.env.SAUCE_USERNAME!;
@@ -16,10 +18,12 @@ const firstName = process.env.firstName!;
 const lastName = process.env.lastName!;
 const zipcode = process.env.Zipcode!;
 
-test('User can purchase a product successfully', async ({ page }) => {
+test('Implementing fixture in playwright', async ({ page }) => {
+    
+    console.log('Test Execution started...')
     await page.setViewportSize({
         width: 1536,
-        height: 322,
+        height: 645,
     }),
 
     console.log(page.viewportSize());
@@ -60,4 +64,7 @@ test('User can purchase a product successfully', async ({ page }) => {
 
     //logout
     await homePage.logoutApplication();
+
+    console.log('Test Execution ended...')
+
 });

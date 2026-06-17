@@ -7,17 +7,17 @@ declare const process: { env: { CI?: string | undefined } };
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
- import dotenv from 'dotenv';
- import path from 'path';
- dotenv.config({ path: path.resolve(__dirname, '.env') });
+import dotenv from 'dotenv';
+import path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  globalTimeout: 60*60*10000,
+  globalTimeout: 60 * 60 * 10000,
   testDir: './tests',
-  
+
   timeout: 2 * 60 * 1000,
   expect: {
     timeout: 10000
@@ -32,14 +32,14 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
- ['html'], 
- ['list'],
- ['dot'],
- ['json',{outputFile: 'json-test-report.json'}],
-  ['junit',{outputFile: 'junit-test-report.xml'}],
-['allure-playwright']
-],
-  
+    ['html'],
+    ['list'],
+    ['dot'],
+    ['json', { outputFile: 'json-test-report.json' }],
+    ['junit', { outputFile: 'junit-test-report.xml' }],
+    ['allure-playwright']
+  ],
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -49,6 +49,9 @@ export default defineConfig({
     video: 'on',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
+    // launchOptions: {
+    //    args: ['--start-maximized']
+    //  },
     actionTimeout: 10000,
     testIdAttribute: 'data-testid',
   },
@@ -57,7 +60,10 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1280, height: 720 },
+      },
     },
 
     // {
