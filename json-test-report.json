@@ -77,13 +77,13 @@
   },
   "suites": [
     {
-      "title": "Chapter05\\05_PageObjectModelTest.spec.ts",
-      "file": "Chapter05/05_PageObjectModelTest.spec.ts",
+      "title": "Chapter05\\08_RunTestBasedOnENV.spec.ts",
+      "file": "Chapter05/08_RunTestBasedOnENV.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "User can purchase a product successfully",
+          "title": "Validate Page Fixtures with imported pages",
           "ok": true,
           "tags": [],
           "tests": [
@@ -95,31 +95,62 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 6,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7187,
+                  "duration": 7978,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Global before is running...\n"
+                    },
+                    {
+                      "text": "Test Execution started now...\n"
+                    },
+                    {
+                      "text": "Product Nae:Sauce Labs Bike Light\n"
+                    },
+                    {
+                      "text": "User name:visual_user\n"
+                    },
+                    {
+                      "text": "password :secret_sauce\n"
+                    },
+                    {
+                      "text": "first name:Sountharya\n"
+                    },
+                    {
+                      "text": "last name :Raja\n"
+                    },
+                    {
+                      "text": "zip:78754\n"
+                    },
+                    {
+                      "text": "Tests are running in dev env.\n"
+                    },
+                    {
+                      "text": "Global afterEach is running...\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-17T01:14:07.490Z",
+                  "startTime": "2026-06-18T04:00:47.261Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\\video.webm"
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\\video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\\trace.zip"
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -127,9 +158,9 @@
               "status": "expected"
             }
           ],
-          "id": "f45b8738e2e7cd282b4b-2f89f4d7fd6c889f870d",
-          "file": "Chapter05/05_PageObjectModelTest.spec.ts",
-          "line": 19,
+          "id": "a7f3982304f3ada9848c-07822c113eb87abbdc5f",
+          "file": "Chapter05/08_RunTestBasedOnENV.spec.ts",
+          "line": 12,
           "column": 5
         }
       ]
@@ -137,8 +168,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-17T01:14:06.424Z",
-    "duration": 7991.5929999999935,
+    "startTime": "2026-06-18T04:00:46.285Z",
+    "duration": 8301.92299999998,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

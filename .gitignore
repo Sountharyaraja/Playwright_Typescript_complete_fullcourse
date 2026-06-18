@@ -6,3 +6,5 @@ playwright-report/
 blob-report/
 playwright/.cache/
 playwright/.auth/
+json-test-report.json
+json-test-report.xml

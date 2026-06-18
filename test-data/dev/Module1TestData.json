@@ -1,0 +1,10 @@
+{
+    "ModuleTestData": {
+        "Username": "visual_user",
+        "Password": "secret_sauce",
+        "Product": "Sauce Labs Bike Light",
+        "Firstname": "Sountharya",
+        "LastName": "Raja",
+        "ZipCode": "78754"
+    }
+}

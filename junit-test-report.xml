@@ -1,13 +1,23 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.991592999999994">
-<testsuite name="Chapter05\05_PageObjectModelTest.spec.ts" timestamp="2026-06-17T01:14:07.009Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.187" errors="0">
-<testcase name="User can purchase a product successfully" classname="Chapter05\05_PageObjectModelTest.spec.ts" time="7.187">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="8.30192299999998">
+<testsuite name="Chapter05\08_RunTestBasedOnENV.spec.ts" timestamp="2026-06-18T04:00:46.845Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.978" errors="0">
+<testcase name="Validate Page Fixtures with imported pages" classname="Chapter05\08_RunTestBasedOnENV.spec.ts" time="7.978">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\test-finished-1.png]]
+<![CDATA[Global before is running...
+Test Execution started now...
+Product Nae:Sauce Labs Bike Light
+User name:visual_user
+password :secret_sauce
+first name:Sountharya
+last name :Raja
+zip:78754
+Tests are running in dev env.
+Global afterEach is running...
 
-[[ATTACHMENT|test-results\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\video.webm]]
+[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\Chapter05-05_PageObjectMod-0d30a-hase-a-product-successfully-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

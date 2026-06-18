@@ -11,6 +11,14 @@ import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
+// Create a sanitized Desktop Chrome device descriptor without deviceScaleFactor
+// because `deviceScaleFactor` is not supported when `viewport` is null.
+const desktopChromeSanitized = (() => {
+  const d = { ...devices['Desktop Chrome'] } as any;
+  if ('deviceScaleFactor' in d) delete d.deviceScaleFactor;
+  return d as Parameters<typeof devices['Desktop Chrome']>[0];
+})();
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -49,9 +57,11 @@ export default defineConfig({
     video: 'on',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    // launchOptions: {
-    //    args: ['--start-maximized']
-    //  },
+    // Start browser maximized and let Playwright inherit the OS window size
+    viewport: null,
+    launchOptions: {
+      args: ['--start-maximized'],
+    },
     actionTimeout: 10000,
     testIdAttribute: 'data-testid',
   },
@@ -61,8 +71,9 @@ export default defineConfig({
     {
       name: 'chromium',
       use: {
-        ...devices['Desktop Chrome'],
-        viewport: { width: 1280, height: 720 },
+        ...desktopChromeSanitized,
+        // inherit global null viewport so the browser starts maximized
+        viewport: null,
       },
     },
 

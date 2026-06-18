@@ -1,4 +1,4 @@
-import {test} from '../../src/fixtures/TestFixture'
+import {test} from '../../src/fixture/TestFixture'
 //import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../src/pages/LoginPage';
 import { HomePage } from '../../src/pages/HomePage';
@@ -21,10 +21,6 @@ const zipcode = process.env.Zipcode!;
 test('Implementing fixture in playwright', async ({ page }) => {
     
     console.log('Test Execution started...')
-    await page.setViewportSize({
-        width: 1536,
-        height: 645,
-    }),
 
     console.log(page.viewportSize());
 

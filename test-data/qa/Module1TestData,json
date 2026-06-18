@@ -1,10 +1,10 @@
 {
-    "ModuleTestData": {
+    "Module1TestData": {
         "Username": "standard_user",
         "Password": "secret_sauce",
         "Product": "Sauce Labs Backpack",
-        "Firstname": "Sountharya",
-        "LastName": "Arumugam",
+        "Firstname" : "Sound",
+        "LastName": "Raja",
         "ZipCode": "78727"
     }
 }
