@@ -69,21 +69,21 @@
     },
     "shard": null,
     "tags": [],
-    "updateSnapshots": "all",
-    "updateSourceMethod": "3way",
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
     "version": "1.60.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Chapter05\\08_RunTestBasedOnENV.spec.ts",
-      "file": "Chapter05/08_RunTestBasedOnENV.spec.ts",
+      "title": "Chapter06\\04_GET_API_Request.spec.ts",
+      "file": "Chapter06/04_GET_API_Request.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Validate Page Fixtures with imported pages",
+          "title": "Create GET API request using in playwright with typescript",
           "ok": true,
           "tags": [],
           "tests": [
@@ -95,62 +95,31 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7978,
+                  "duration": 400,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Global before is running...\n"
+                      "text": "POST API Response: {\n  \"bookingid\": 1362,\n  \"booking\": {\n    \"firstname\": \"Sara\",\n    \"lastname\": \"Tremblay\",\n    \"totalprice\": 2217,\n    \"depositpaid\": true,\n    \"bookingdates\": {\n      \"checkin\": \"2026-06-20\",\n      \"checkout\": \"2026-06-21\"\n    },\n    \"additionalneeds\": \"breakfast\"\n  }\n}\n"
                     },
                     {
-                      "text": "Test Execution started now...\n"
+                      "text": "Booking ID:1362\n"
                     },
                     {
-                      "text": "Product Nae:Sauce Labs Bike Light\n"
-                    },
-                    {
-                      "text": "User name:visual_user\n"
-                    },
-                    {
-                      "text": "password :secret_sauce\n"
-                    },
-                    {
-                      "text": "first name:Sountharya\n"
-                    },
-                    {
-                      "text": "last name :Raja\n"
-                    },
-                    {
-                      "text": "zip:78754\n"
-                    },
-                    {
-                      "text": "Tests are running in dev env.\n"
-                    },
-                    {
-                      "text": "Global afterEach is running...\n"
+                      "text": "Get API Response: {\n  \"firstname\": \"Sara\",\n  \"lastname\": \"Tremblay\",\n  \"totalprice\": 2217,\n  \"depositpaid\": true,\n  \"bookingdates\": {\n    \"checkin\": \"2026-06-20\",\n    \"checkout\": \"2026-06-21\"\n  },\n  \"additionalneeds\": \"breakfast\"\n}\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-18T04:00:47.261Z",
+                  "startTime": "2026-06-21T04:23:04.834Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\\video.webm"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\\trace.zip"
+                      "path": "C:\\Users\\sount\\OneDrive\\Desktop\\Learning\\Playwright_Typescript_complete_fullcourse\\test-results\\Chapter06-04_GET_API_Reque-d2358--playwright-with-typescript-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -158,9 +127,9 @@
               "status": "expected"
             }
           ],
-          "id": "a7f3982304f3ada9848c-07822c113eb87abbdc5f",
-          "file": "Chapter05/08_RunTestBasedOnENV.spec.ts",
-          "line": 12,
+          "id": "dd4e58dfc6ae0f86241c-6a036a35034a3c75ea7e",
+          "file": "Chapter06/04_GET_API_Request.spec.ts",
+          "line": 9,
           "column": 5
         }
       ]
@@ -168,8 +137,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-18T04:00:46.285Z",
-    "duration": 8301.92299999998,
+    "startTime": "2026-06-21T04:23:04.019Z",
+    "duration": 1310.1950000000002,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

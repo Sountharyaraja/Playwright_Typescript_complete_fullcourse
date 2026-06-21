@@ -1,23 +1,35 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="8.30192299999998">
-<testsuite name="Chapter05\08_RunTestBasedOnENV.spec.ts" timestamp="2026-06-18T04:00:46.845Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.978" errors="0">
-<testcase name="Validate Page Fixtures with imported pages" classname="Chapter05\08_RunTestBasedOnENV.spec.ts" time="7.978">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.3101950000000002">
+<testsuite name="Chapter06\04_GET_API_Request.spec.ts" timestamp="2026-06-21T04:23:04.212Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.4" errors="0">
+<testcase name="Create GET API request using in playwright with typescript" classname="Chapter06\04_GET_API_Request.spec.ts" time="0.4">
 <system-out>
-<![CDATA[Global before is running...
-Test Execution started now...
-Product Nae:Sauce Labs Bike Light
-User name:visual_user
-password :secret_sauce
-first name:Sountharya
-last name :Raja
-zip:78754
-Tests are running in dev env.
-Global afterEach is running...
+<![CDATA[POST API Response: {
+  "bookingid": 1362,
+  "booking": {
+    "firstname": "Sara",
+    "lastname": "Tremblay",
+    "totalprice": 2217,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-06-20",
+      "checkout": "2026-06-21"
+    },
+    "additionalneeds": "breakfast"
+  }
+}
+Booking ID:1362
+Get API Response: {
+  "firstname": "Sara",
+  "lastname": "Tremblay",
+  "totalprice": 2217,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2026-06-20",
+    "checkout": "2026-06-21"
+  },
+  "additionalneeds": "breakfast"
+}
 
-[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\Chapter05-08_RunTestBasedO-b2c94-ixtures-with-imported-pages-chromium\trace.zip]]
+[[ATTACHMENT|test-results\Chapter06-04_GET_API_Reque-d2358--playwright-with-typescript-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -1,0 +1,11 @@
+{
+    "firstname": "{0}",
+    "lastname": "{1}",
+    "totalprice": "{2}",
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2026-06-20",
+        "checkout": "2026-06-21"
+    },
+    "additionalneeds": "super bowls"
+}
